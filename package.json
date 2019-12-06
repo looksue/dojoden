@@ -1,0 +1,20 @@
+{
+  "name": "dojoden",
+  "version": "1.0.0",
+  "description": "A Martial Arts School Management App",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/looksue/dojoden.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/looksue/dojoden/issues"
+  },
+  "homepage": "https://github.com/looksue/dojoden#readme"
+}
