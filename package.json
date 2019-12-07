@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/looksue/dojoden/issues"
   },
-  "homepage": "https://github.com/looksue/dojoden#readme"
+  "homepage": "https://github.com/looksue/dojoden#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
