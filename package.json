@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/looksue/dojoden#readme",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
 }
