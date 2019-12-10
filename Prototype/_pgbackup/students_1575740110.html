@@ -65,10 +65,8 @@
                                                 <tr>
                                                     <th width="200">Student Name</th>
                                                     <th>Active Class</th>
-                                                    <th width="75">Edit</th>
-                                                    <th width="75">Delete</th>
-                                                    <th width="75">Active Student</th>
-                                                    <th width="75">Send Invoice</th>
+                                                    <th width="150">Edit</th>
+                                                    <th width="150">Delete</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -77,42 +75,18 @@
                                                     <td>Fundamentals</td>
                                                     <td> <a href="#" class="button">Edit</a></td>
                                                     <td> <a href="#" class="button alert">Delete</a> </td>
-                                                    <td>
-                                                        <div class="switch">
-                                                            <input class="switch-input" id="activeStudent" type="checkbox" name="activeStudent">
-                                                            <label class="switch-paddle" for="activeStudent"></label>
-                                                            <span class="show-for-sr">Active Student</span>
-                                                        </div>
-                                                    </td>
-                                                    <td> <a href="#" class="button success">Invoice</a> </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Jeffery Huddleston</td>
                                                     <td>Fundamentals Advanced</td>
                                                     <td> <a href="#" class="button">Edit</a></td>
                                                     <td> <a href="#" class="button alert">Delete</a> </td>
-                                                    <td>
-                                                        <div class="switch">
-                                                            <input class="switch-input" id="activeStudent1" type="checkbox" name="activeStudent1">
-                                                            <label class="switch-paddle" for="activeStudent1"></label>
-                                                            <span class="show-for-sr">Active Student</span>
-                                                        </div>
-                                                    </td>
-                                                    <td> <a href="#" class="button success">Invoice</a> </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Sue Look</td>
                                                     <td>Competition Teams</td>
                                                     <td> <a href="#" class="button">Edit</a></td>
                                                     <td> <a href="#" class="button alert">Delete</a> </td>
-                                                    <td>
-                                                        <div class="switch">
-                                                            <input class="switch-input" id="activeStudent2" type="checkbox" name="activeStudent2">
-                                                            <label class="switch-paddle" for="activeStudent2"></label>
-                                                            <span class="show-for-sr">Active Student</span>
-                                                        </div>
-                                                    </td>
-                                                    <td> <a href="#" class="button success">Invoice</a> </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -130,12 +104,12 @@
                                                 <div class="grid-x grid-padding-x"> 
                                                     <div class="large-4 cell"> 
                                                         <label>First Name                                   
-                                                            <input type="text" placeholder=""/> 
+                                                            <input type="text" placeholder="large-4.cell"/> 
                                                         </label>                                                         
                                                     </div>                                                     
                                                     <div class="large-4 cell"> 
                                                         <label>Last Name                                    
-                                                            <input type="text" placeholder=""/> 
+                                                            <input type="text" placeholder="large-4.cell"/> 
                                                         </label>                                                         
                                                     </div>                                                     
                                                     <div class="large-4 cell"> 
@@ -150,6 +124,17 @@
                                                 </div>                                                 
                                             </div>                                             
                                             <div class="grid-container"> 
+                                                <div class="grid-x grid-padding-x"> 
+                                                    <div class="large-12 cell"> 
+                                                        <label>Class                                   
+                                                            <select> 
+                                                                <option value="husker">Fundamentals</option>                                                                 
+                                                                <option value="starbuck">Advanced Fundamentals</option>                                                                 
+                                                                <option value="hotdog">Competition</option>                                                                 
+                                                            </select>                                                             
+                                                        </label>                                                         
+                                                    </div>                                                     
+                                                </div>
                                                 <div class="grid-x grid-padding-x"> 
                                                     <div class="large-6 cell"> 
                                                         <label> Class
@@ -186,7 +171,16 @@
                                             </div>
                                             <div class="grid-container"> 
                                                 <div class="grid-x grid-padding-x"> 
-</div>
+                                                    <div class="large-12 cell"> 
+                                                        <label>Active Student</label>
+                                                        <div class="switch">
+                                                            <input class="switch-input" id="activeStudent" type="checkbox" name="activeStudent">
+                                                            <label class="switch-paddle" for="activeStudent">
+                                                                <span class="show-for-sr">Active Student</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="grid-container"> 
                                                 <div class="grid-x grid-padding-x"> 
@@ -194,7 +188,7 @@
                                                         <a href="#" class="button">Add Student</a> 
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div>                                             
                                         </form>
                                     </div>
                                 </li>
