@@ -78,8 +78,6 @@ var Student = sequelize.define("student", {
     created_at: Sequelize.DATE
 });
 
-// Syncs with DB
 Student.sync();
 
-// Makes the Chirp Model available for other files (will also create a table)
 module.exports = Student;

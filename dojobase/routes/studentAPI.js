@@ -1,21 +1,16 @@
-// Dependencies
-// =============================================================
-var Student = require("../models/testStudentModel");
+var Student = require("../models/Student");
 
 
 // Routes
 // =============================================================
 module.exports = function(app) {
 
-  // Get all chirps
+//   get all students
   app.get("/api/students", function(req, res) {
-
-
-    Student.findAll({}).then(function(results) {
-      // results are available to us inside the .then
+    Student.findAll({})
+    .then(function(results) {
       res.json(results);
     });
-
   });
 
   // Add a student
@@ -38,7 +33,16 @@ module.exports = function(app) {
     }).then(function(results) {
       res.end();
     });
-
   });
+};
 
+app.post("/api/deleteStudent"), function(req, res) {
+    Student.destroy({
+        where: {
+            userName: req.body.userName
+        }
+    }).then(function(results) {
+        console.log("Student Deleted.")
+        res.end();
+    })
 };
