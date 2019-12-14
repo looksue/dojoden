@@ -19,7 +19,14 @@
   "homepage": "https://github.com/looksue/dojoden#readme",
   "dependencies": {
     "express": "^4.17.1",
+<<<<<<< HEAD
     "path": "^0.12.7"
+=======
+    "path": "^0.12.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
+>>>>>>> 2dd8ab1ae64a6bca9a80ace700423bdaf77fbcfa
   },
   "devDependencies": {}
 }
