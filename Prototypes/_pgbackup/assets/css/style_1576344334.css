@@ -1,5 +1,5 @@
 body {
-    background: #fdf6dc;
+    background: #f4f3ef;
 }
 
 #wrapper {
@@ -67,9 +67,8 @@ body {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #F9E59c;
+    color: #376c72;
     font-weight: bold;
-    text-align: center;
 }
 
 .sidebar-nav li a:hover {
@@ -114,7 +113,6 @@ body {
     }
 
     #page-content-wrapper {
-        background-color: #fdf6dc;
         padding: 20px;
         position: relative;
     }
