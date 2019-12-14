@@ -7,13 +7,10 @@ module.exports = function(app) {
 
 //   get all students
   app.get("/api/students", function(req, res) {
-
-
     Student.findAll({})
     .then(function(results) {
       res.json(results);
     });
-
   });
 
   // Add a student
@@ -37,4 +34,15 @@ module.exports = function(app) {
       res.end();
     });
   });
+};
+
+app.post("/api/deleteStudent"), function(req, res) {
+    Student.destroy({
+        where: {
+            userName: req.body.userName
+        }
+    }).then(function(results) {
+        console.log("Student Deleted.")
+        res.end();
+    })
 };
