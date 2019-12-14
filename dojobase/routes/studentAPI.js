@@ -1,18 +1,16 @@
-// Dependencies
-// =============================================================
-var Student = require("../models/testStudentModel");
+var Student = require("../models/Student");
 
 
 // Routes
 // =============================================================
 module.exports = function(app) {
 
-  // Get all chirps
+//   get all students
   app.get("/api/students", function(req, res) {
 
 
-    Student.findAll({}).then(function(results) {
-      // results are available to us inside the .then
+    Student.findAll({})
+    .then(function(results) {
       res.json(results);
     });
 
@@ -38,7 +36,5 @@ module.exports = function(app) {
     }).then(function(results) {
       res.end();
     });
-
   });
-
 };
