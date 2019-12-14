@@ -9,6 +9,13 @@ var Student = sequelize.define("student", {
             notEmpty: true
         }
     },
+    userName: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        validate: {
+            notEmpty: true
+        }
+    },
     address: {
         type: Sequelize.STRING,
         allowNull: false,
