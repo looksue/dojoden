@@ -51,11 +51,11 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="large-12">
+                        <div class="large-12" class="divCalendarIntro">
                             <h1>Event Calendar</h1>
                             <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.</p>
                             <table class="table-expand">
-                                <thead>
+                                <thead class="theadCalendar">
                                     <tr class="table-expand-row">
                                         <th width="200">Date</th>
                                         <th>Title</th>
@@ -112,13 +112,13 @@
                                 </tbody>
                             </table>
                             <div class="row">
-                                <h3>Add Event</h3>
+                                <h3 class="calAddEvent">Add Event</h3>
                                 <form> 
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="large-12 cell"> 
-                                                <label>Event Title                                    
-                                                    <input type="text" placeholder="ß"/> 
+                                                <label class="labCalendar">Event Title                                    
+                                                    <input type="text" class="inpCalendar" id="inpEventTitle" placeholder="ß"/> 
                                                 </label>                                                 
                                             </div>                                             
                                         </div>                                         
@@ -126,8 +126,8 @@
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="cell large-12"> 
-                                                <label>Start Date and Time  
-                                                    <input type="text" class="date" value="02-12-1989 12:05" id="dpt">
+                                                <label class="labCalendar">Start Date and Time  
+                                                    <input type="text" class="date inpCalendar" value="02-12-1989 12:05" id="dpt">
                                                     <script>
 $(function(){
   $('#dpt').fdatepicker({
@@ -145,8 +145,8 @@ $(function(){
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="large-12 cell"> 
-                                                <label>More Information                                   
-                                                    <textarea placeholder="small-12.cell"></textarea> 
+                                                <label class="labCalendar">More Information                                   
+                                                    <textarea class="inpCalendar" id="txtCalendarMoreInfo" placeholder="small-12.cell"></textarea> 
                                                 </label>                                                 
                                             </div>                                             
                                         </div>                                         
@@ -154,7 +154,7 @@ $(function(){
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="large-12 cell"> 
-                                                <a href="#" class="button">Button</a> 
+                                                <a href="#" class="button btnCalendar" id="btnCalendar">Button</a> 
                                             </div>                                             
                                         </div>                                         
                                     </div>                                     
