@@ -301,9 +301,9 @@ btn-menu {
 
 /* Delete buttons */
 .btnClassDelete{}
-#btnFundamentalsDelete
-#btnAdvancedDelete
-#btnCompetitionDelete
+#btnFundamentalsDelete{}
+#btnAdvancedDelete{}
+#btnCompetitionDelete{}
 
 /* Add Event header */
 .classAddEvent{}
