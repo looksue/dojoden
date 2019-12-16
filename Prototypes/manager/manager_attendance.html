@@ -51,24 +51,24 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="large-12">
+                        <div class="large-12" class="divAttendanceIntro">
                             <h1>Attendance</h1>
-                            <p class="lead">Attendence Per Class.</p>
+                            <p class="lead">Attendance Per Class.</p>
                             <ul class="tabs" data-tabs="" id="panel-content293"> 
                                 <li class="tabs-title is-active">
-                                    <a href="#panel294" aria-selected="true">Fundamentals</a>
+                                    <a href="#panel294" aria-selected="true" id="liFundamentals">Fundamentals</a>
                                 </li>                                 
                                 <li class="tabs-title">
-                                    <a href="#panel295">Advanced</a>
+                                    <a href="#panel295" id="liAdvanced">Advanced</a>
                                 </li>                                 
                                 <li class="tabs-title">
-                                    <a href="#panel296">Comp Team</a>
+                                    <a href="#panel296" id="liCompTeam">Comp Team</a>
                                 </li>                                 
                             </ul>
                             <div class="tabs-content" data-tabs-content="panel-content293">
                                 <div class="tabs-panel is-active" id="panel294">
                                     <table>
-                                        <thead>
+                                        <thead class="theadAttendance">
                                             <tr>
                                                 <th width="80%">Student Name</th>
                                                 <th width="20%">Mark Present</th>
@@ -107,7 +107,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <a href="#" class="button">Submit Attendence</a>
+                                    <a href="#" class="button btnAttendance" id="btnAttendance">Submit Attendance</a>
                                 </div>
                                 <div class="tabs-panel" id="panel295">
                                     <table>
