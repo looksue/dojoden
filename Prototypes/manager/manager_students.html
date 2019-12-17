@@ -126,7 +126,7 @@
                             </li>
                             <li class="accordion-item" data-accordion-item>
                                 <!-- Accordion tab title -->
-                                <a href="#" class="accordion-title"class="tabStudAdd">Add A Student</a>
+                                <a href="#" class="accordion-title" class="tabStudAdd">Add A Student</a>
                                 <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
                                 <div class="accordion-content" data-tab-content>
                                     <p class="lead">Add A Student</p>
@@ -135,20 +135,20 @@
                                             <div class="grid-x grid-padding-x">
                                                 <div class="large-4 cell">
                                                     <label>First Name
-                                                        <input type="text" placeholder="" />
+                                                        <input type="text" id="inpStudFirstName" placeholder="" />
                                                     </label>
                                                 </div>
                                                 <div class="large-4 cell">
                                                     <label>Last Name
-                                                        <input type="text" placeholder="" />
+                                                        <input type="text" id="inpStudLastName"placeholder="" />
                                                     </label>
                                                 </div>
                                                 <div class="large-4 cell">
                                                     <div class="collapse">
                                                         <label>Email </label>
                                                         <div class="input-group">
-                                                            <input class="input-group-field" type="url">
-                                                            <span class="input-group-label">.com</span>
+                                                            <input class="input-group-field" type="url" id="inpStudEmail">
+                                                            <span class="input-group-label" id="spaStudCom">.com</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -157,7 +157,7 @@
                                         <div class="grid-container">
                                             <div class="grid-x grid-padding-x">
                                                 <div class="large-4 cell">
-                                                    <label> Class
+                                                    <label id="labStudClass"> Class
                                                         <select>
                                                             <option value="">Choose</option>
                                                             <option value="Fundamentals">Fundamentals</option>
@@ -168,7 +168,7 @@
                                                     </label>
                                                 </div>
                                                 <div class="large-4 cell">
-                                                    <label>Belt
+                                                    <label id="labStudBelt">Belt
                                                         <select>
                                                             <option value="">Choose</option>
                                                             <option value="White">White</option>
@@ -180,7 +180,7 @@
                                                     </label>
                                                 </div>
                                                 <div class="large-4 cell">
-                                                    <label>Stripe
+                                                    <label id="labStudStripe">Stripe
                                                         <select>
                                                             <option value="">Choose</option>
                                                             <option value="1">One</option>
@@ -195,7 +195,7 @@
                                         <div class="grid-container">
                                             <div class="grid-x grid-padding-x">
                                                 <div class="large-12 cell">
-                                                    <label>Student Notes
+                                                    <label id="labStudNotes">Student Notes
                                                         <textarea placeholder="Add notes here"></textarea>
                                                     </label>
                                                 </div>
@@ -208,7 +208,7 @@
                                         <div class="grid-container">
                                             <div class="grid-x grid-padding-x">
                                                 <div class="large-12 cell">
-                                                    <a href="#" class="button">Add Student</a>
+                                                    <a href="#" class="button" id="btnStudAdd">Add Student</a>
                                                 </div>
                                             </div>
                                         </div>
