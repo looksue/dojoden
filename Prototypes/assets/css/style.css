@@ -320,6 +320,29 @@ btn-menu {
 .btnClass{}
 #btnClass{}
 
+/*==================Classes for Messaging Page ==============*/
+/* Intro */
+.divMessageIntro{}
+
+/* h1 */
+.headMessage{}
+
+/* Labels */
+.labMessage {}
+#labMessage{}
+#labRecipients{}
+
+/* Select */
+.selMessage{}
+#selRecipients{}
+
+/* Text Area */
+.txtMessage{}
+
+/* Button */
+.btnMessage{}
+#btnMessage{}
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
