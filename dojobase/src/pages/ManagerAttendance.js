@@ -1,6 +1,3 @@
-{
-  /* manager attendance */
-}
 import React, { Component } from "react";
 
 function ManagerAttendance() {
