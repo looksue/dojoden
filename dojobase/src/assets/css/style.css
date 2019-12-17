@@ -320,6 +320,38 @@ btn-menu {
 .btnClass{}
 #btnClass{}
 
+/*======Classes for Profile======*/
+.h1ProAttend{}
+.lead{}
+.h3Profile{}
+.pInfo{}
+.h3Attend{}
+
+/*======id's for Company=======*/
+#inpCompanyName{}
+#inpFirstName{}
+#inpLastName{}
+#inpEmailAddress{}
+#inpPassWord{}
+#inpRepPassword{}
+
+/*======Classes for Company=====*/
+.labCompanyName{}
+.labFirstName{}
+.labLastName{}
+.labEmailAddress{}
+.labPassword{}
+.labRepPassword{}
+
+/*=== id's for Student Check In=====*/
+#inpUserNAme{}
+#inpPassCode{}
+#inpClassFundamentals{}
+#inpClassAdvanced{}
+#inpClassComp{}
+#studentButton{}
+
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
