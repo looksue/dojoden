@@ -51,7 +51,7 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="large-12">
+                        <div class="large-12" class="divBillIntro">
                             <h1>Billing</h1>
                             <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.</p>
                             <p>Make sure to keep your content here</p>
@@ -64,20 +64,20 @@
                     <div class="grid-container"> 
                         <div class="grid-x grid-padding-x"> 
                             <div class="large-4 cell"> 
-                                <label>Bill To First Name                                   
-                                    <input type="text" placeholder=""/> 
+                                <label class="labBill">Bill To First Name                                   
+                                    <input type="text" class="inpBill" id="inpBillFirstName" placeholder=""/> 
                                 </label>                                 
                             </div>                             
                             <div class="large-4 cell"> 
-                                <label>Bill To Last Name                                   
-                                    <input type="text" placeholder=""/> 
+                                <label class="labBill">Bill To Last Name                                   
+                                    <input type="text" class="inpBill" id="inpBillLastName" placeholder=""/> 
                                 </label>                                 
                             </div>                             
                             <div class="large-4 cell"> 
                                 <div class="collapse"> 
-                                    <label>Bill To Email Address</label>                                     
+                                    <label class="labBill">Bill To Email Address</label>                                     
                                     <div class="input-group"> 
-                                        <input type="text" placeholder=""/> 
+                                        <input type="text" class="inpBill" id="inpBillEmail" placeholder=""/> 
                                     </div>                                     
                                 </div>                                 
                             </div>                             
@@ -86,10 +86,10 @@
                     <div class="grid-container"> 
                         <div class="grid-x grid-padding-x"> 
                             <div class="large-12 cell"> 
-                                <label>Bill Amount                                  
+                                <label class="labBill">Bill Amount                                  
                                     <div class="input-group">
                                         <span class="input-group-label"> <i class="fa fa-usd"></i> </span>
-                                        <input class="input-group-field" type="text" placeholder="Full name">
+                                        <input class="input-group-field" type="text" class="inpBill" id="inpBillAmount" placeholder="Full name">
                                     </div>                                     
                                 </label>                                 
                             </div>                             
@@ -102,12 +102,12 @@
                     <div class="grid-container"> 
                         <div class="grid-x grid-padding-x"> 
                             <div class="large-12 cell"> 
-                                <label>Notes                                   
-                                    <textarea placeholder=""></textarea> 
+                                <label class="labBill">Notes                                   
+                                    <textarea class="inpBill" id="txtBillNotes" placeholder=""></textarea> 
                                 </label>                                 
                             </div>                             
                             <div class="large-12 cell">
-                                <a href="#" class="button">Button</a> 
+                                <a href="#" class="button btnBill" id="btnBill">Button</a> 
                             </div>                             
                         </div>                         
                     </div>                     

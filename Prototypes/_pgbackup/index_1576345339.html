@@ -5,16 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Dojo Manager | Welcome</title>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="../assets/css/foundation.css"/>
-        <link rel="stylesheet" href="../assets/css/style.css"/>
-        <script src="js/vendor/modernizr.js"></script>
+        <link rel="stylesheet" href="/assets/css/foundation.css"/>
+        <link rel="stylesheet" href="/assets/css/style.css"/>
+        <script src="assets/js/vendor/modernizr.js"></script>
     </head>
     <body>
         <div id="wrapper" class="wrapper-content">
             <div id="sidebar-wrapper" style=" 
+background-image: url('assets/img/dragonBG.png');
+background-position: center top;
+background-repeat: repeat-y;
 ">
                 <div class="row">
-                    <img src="../assets/img/MataLeauLOGO_noBG.png"/>
+                    <img src="assets/img/MataLeauLOGO_noBG.png"/>
                 </div>
                 <div class="row menu selections">
                     <ul class="sidebar-nav">
@@ -49,11 +52,11 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="large-12" class="divCalendarIntro">
+                        <div class="large-12">
                             <h1>Event Calendar</h1>
                             <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens.</p>
                             <table class="table-expand">
-                                <thead class="theadCalendar">
+                                <thead>
                                     <tr class="table-expand-row">
                                         <th width="200">Date</th>
                                         <th>Title</th>
@@ -110,13 +113,13 @@
                                 </tbody>
                             </table>
                             <div class="row">
-                                <h3 class="calAddEvent">Add Event</h3>
+                                <h3>Add Event</h3>
                                 <form> 
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="large-12 cell"> 
-                                                <label class="labCalendar">Event Title                                    
-                                                    <input type="text" class="inpCalendar" id="inpEventTitle" placeholder="ß"/> 
+                                                <label>Event Title                                    
+                                                    <input type="text" placeholder="ß"/> 
                                                 </label>                                                 
                                             </div>                                             
                                         </div>                                         
@@ -124,8 +127,8 @@
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="cell large-12"> 
-                                                <label class="labCalendar">Start Date and Time  
-                                                    <input type="text" class="date inpCalendar" value="02-12-1989 12:05" id="dpt">
+                                                <label>Start Date and Time  
+                                                    <input type="text" class="date" value="02-12-1989 12:05" id="dpt">
                                                     <script>
 $(function(){
   $('#dpt').fdatepicker({
@@ -143,8 +146,8 @@ $(function(){
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="large-12 cell"> 
-                                                <label class="labCalendar">More Information                                   
-                                                    <textarea class="inpCalendar" id="txtCalendarMoreInfo" placeholder="small-12.cell"></textarea> 
+                                                <label>More Information                                   
+                                                    <textarea placeholder="small-12.cell"></textarea> 
                                                 </label>                                                 
                                             </div>                                             
                                         </div>                                         
@@ -152,7 +155,7 @@ $(function(){
                                     <div class="grid-container"> 
                                         <div class="grid-x grid-padding-x"> 
                                             <div class="large-12 cell"> 
-                                                <a href="#" class="button btnCalendar" id="btnCalendar">Button</a> 
+                                                <a href="#" class="button">Button</a> 
                                             </div>                                             
                                         </div>                                         
                                     </div>                                     
@@ -163,9 +166,9 @@ $(function(){
                 </div>
             </div>
         </div>
-        <script src="js/vendor/jquery.js"></script>
-        <script src="js/foundation.min.js"></script>
-        <script src="js/dojo.js"></script>
+        <script src="assets/js/vendor/jquery.js"></script>
+        <script src="assets/js/foundation.min.js"></script>
+        <script src="assets/js/dojo.js"></script>
         <script>
       $(document).foundation();
     </script>
