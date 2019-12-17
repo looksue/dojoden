@@ -51,8 +51,8 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="large-12">
-                            <h1>Messaging</h1>
+                        <div class="large-12" class="divMessageIntro">
+                            <h1 class="headMessage">Messaging</h1>
                             <p>To send a message to your students, Make sure to keep your content here<br></p>
                         </div>
                     </div>
@@ -70,8 +70,8 @@
                 <div class="grid-container"> 
                     <div class="grid-x grid-padding-x"> 
                         <div class="large-12 cell"> 
-                            <label>Recipients                                   
-                                <select> 
+                            <label class="labMessage" id="labRecipients">Recipients                                   
+                                <select class="selMessage" id="selRecipients"> 
                                     <option value="">Select</option>                                     
                                     <option value="all">Whole School</option>                                     
                                     <option value="starbuck">Essentals</option>                                     
@@ -89,14 +89,14 @@
                 <div class="grid-container"> 
                     <div class="grid-x grid-padding-x"> 
                         <div class="large-12 cell"> 
-                            <label>Message                                   
-                                <textarea placeholder=""></textarea> 
+                            <label class="labMessage" id="labMessage">Message                                   
+                                <textarea class="txtMessage" placeholder=""></textarea> 
                             </label>                             
                         </div>
                         <div class="grid-container"> 
                             <div class="grid-x grid-padding-x"> 
                                 <div class="large-12 cell"> 
-                                    <a href="#" class="button">Send</a> 
+                                    <a href="#" class="button btnMessage" id="btnMessage" >Send</a> 
                                 </div>
                             </div>
                         </div>                         
