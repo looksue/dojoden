@@ -12,7 +12,12 @@ function App() {
         <Sidenav />
         <div id="page-content-wrapper">
           <Navbar />  
-          <Route exact path="/allStudents" component={StudentDir} />    
+          <Route exact path="/allStudents" component={StudentDir} />
+          <Route exact path="/messaging" component={StudentDir} />
+          <Route exact path="/attendance" component={StudentDir} />
+          <Route exact path="/billing" component={StudentDir} />
+          <Route exact path="/classes" component={StudentDir} />
+          <Route exact path="/calendar" component={StudentDir} />    
         </div>
       </div>
      
