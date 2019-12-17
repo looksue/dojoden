@@ -4,7 +4,8 @@ function ManagerClasses() {
   return (
 <div className="container-fluid">
 <div className="row">
-  <div className="large-12 divClassesIntro">
+  <h3 className="classAddEvent">Add Class</h3>
+  <div className="large-12">
     <h1>Classes</h1>
     <p className="lead">
       This screen displays your active classes. To manage the class attendence,
@@ -76,8 +77,58 @@ function ManagerClasses() {
       </div>
     </div>
   </div>
+<<<<<<< HEAD
 </div>
 
+=======
+  <form>
+    <div className="grid-container">
+      <div className="grid-x grid-padding-x">
+        <div className="large-12 cell">
+          <label className="labClass">
+            Class Name
+            <input
+              type="text"
+              className="inpClass"
+              id="inpClassName"
+              placeholder="Class Name"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div className="grid-container">
+      <div className="grid-x grid-padding-x">
+        <div className="large-12 cell">
+          <label className="labClass">
+            Class Description
+            <div id="sample">
+              <textarea
+                name="classDescription"
+                className="inpClass"
+                id="txtClassDescription"
+                cols={40}
+                rows={10}
+                defaultValue={"\n"}
+              />
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div className="grid-container">
+      <div className="grid-x grid-padding-x">
+        <div className="large-12 cell">
+          <a href="#" className="button btnClass" id="btnClass">
+            Save Class
+          </a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+>>>>>>> 2bb2ee9293d94b7f0224913db6df74971db6c435
 </div>
     );
 }
