@@ -8,10 +8,12 @@ import Navbar from "./components/navbar"
 function App() {
   return (
     <Router>
-      <div>
+      <div id="wrapper" className="wrapper-content">
         <Sidenav />
-        <Navbar />  
-     <Route exact path="/allStudents" component={StudentDir} />    
+        <div id="page-content-wrapper">
+          <Navbar />  
+          <Route exact path="/allStudents" component={StudentDir} />    
+        </div>
       </div>
      
     </Router>
