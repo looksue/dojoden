@@ -1,6 +1,3 @@
-{
-  /* ManagerCalendar */
-}
 import React, { Component } from "react";
 
 function ManagerCalendar() {

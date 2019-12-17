@@ -1,6 +1,3 @@
-{
-  /* ManagerClasses */
-}
 import React, { Component } from "react";
 
 function ManagerClasses() {
@@ -79,7 +76,7 @@ function ManagerClasses() {
       </div>
     </div>
   </div>
-</div>;
+</div>
 
 </div>
     );

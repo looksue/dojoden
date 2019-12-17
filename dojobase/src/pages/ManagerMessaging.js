@@ -1,6 +1,3 @@
-{
-  /* ManagerMessaging */
-}
 import React, { Component } from "react";
 
 function ManagerMessaging() {
