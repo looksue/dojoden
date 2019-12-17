@@ -343,6 +343,40 @@ btn-menu {
 .btnMessage{}
 #btnMessage{}
 
+/*=============Classes for Students ==================*/
+/* Intro */
+.divStudentsIntro{}
+
+/* Li */
+#liStudents{}
+
+/* thead/tbody */
+.theadStudent{}
+.tbodyStudents{}
+
+/* Button */
+.btnStudEdit{}
+#btnStudEdit{}
+.btnStudDelete{}
+#btnStudDelete{}
+.btnStudInvoice{}
+#btnStudInvoice{}
+
+/* ===========Add a Student ============ */
+ /*  labels  */
+ #inpStudFirstName{}
+ #inpStudLastName{}
+ #inpStudEmail{}
+ #spaStudCom{}
+ #labStudClass{}
+ #labStudBelt{}
+ #labStudStripe{}
+ #labStudNotes{}
+ 
+ /*  button */
+ #btnStudAdd{}
+
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
