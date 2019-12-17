@@ -54,17 +54,17 @@
             </nav>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="large-12">
+                    <div class="large-12" class="divStudentsIntro">
                         <h1>Students</h1>
                         <p class="lead">Your Current Students.</p>
                         <ul class="accordion" data-accordion>
                             <li class="accordion-item is-active" data-accordion-item>
                                 <!-- Accordion tab title -->
-                                <a href="#" class="accordion-title">Students</a>
+                                <a href="#" class="accordion-title" id="liStudents">Students</a>
                                 <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
                                 <div class="accordion-content" data-tab-content>
                                     <table>
-                                        <thead>
+                                        <thead class="theadStudent">
                                             <tr>
                                                 <th width="200">Student Name</th>
                                                 <th>Belt</th>
@@ -74,12 +74,12 @@
                                                 <th width="75">Send Invoice</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="tbodyStudents">
                                             <tr>
                                                 <td>Brian Helms</td>
                                                 <td>White</td>
-                                                <td> <a href="#" class="button">Edit</a></td>
-                                                <td> <a href="#" class="button alert">Delete</a> </td>
+                                                <td> <a href="#" class="button" class="btnStudEdit" id="btnStudEdit">Edit</a></td>
+                                                <td> <a href="#" class="button alert" class="btnStudDelete" id="btnStudDelete">Delete</a> </td>
                                                 <td>
                                                     <div class="switch">
                                                         <input class="switch-input" id="activeStudent" type="checkbox"
@@ -88,13 +88,13 @@
                                                         <span class="show-for-sr">Active Student</span>
                                                     </div>
                                                 </td>
-                                                <td> <a href="#" class="button success">Invoice</a> </td>
+                                                <td> <a href="#" class="button success" class="btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
                                             </tr>
                                             <tr>
                                                 <td>Jeffery Huddleston</td>
                                                 <td>Blue</td>
-                                                <td> <a href="#" class="button">Edit</a></td>
-                                                <td> <a href="#" class="button alert">Delete</a> </td>
+                                                <td> <a href="#" class="button" class="btnStudEdit" id="btnStudEdit">Edit</a></td>
+                                                <td> <a href="#" class="button alert" class="btnStudDelete" id="btnStudDelete">Delete</a> </td>
                                                 <td>
                                                     <div class="switch">
                                                         <input class="switch-input" id="activeStudent1" type="checkbox"
@@ -103,13 +103,13 @@
                                                         <span class="show-for-sr">Active Student</span>
                                                     </div>
                                                 </td>
-                                                <td> <a href="#" class="button success">Invoice</a> </td>
+                                                <td> <a href="#" class="button success"class="btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
                                             </tr>
                                             <tr>
                                                 <td>Sue Look</td>
                                                 <td>Black</td>
-                                                <td> <a href="#" class="button">Edit</a></td>
-                                                <td> <a href="#" class="button alert">Delete</a> </td>
+                                                <td> <a href="#" class="button" class="btnStudEdit" id="btnStudEdit">Edit</a></td>
+                                                <td> <a href="#" class="button alert"class="btnStudDelete" id="btnStudDelete">Delete</a> </td>
                                                 <td>
                                                     <div class="switch">
                                                         <input class="switch-input" id="activeStudent2" type="checkbox"
@@ -118,7 +118,7 @@
                                                         <span class="show-for-sr">Active Student</span>
                                                     </div>
                                                 </td>
-                                                <td> <a href="#" class="button success">Invoice</a> </td>
+                                                <td> <a href="#" class="button success"class="btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
                                             </tr>
                                         </tbody>
                                     </table>
