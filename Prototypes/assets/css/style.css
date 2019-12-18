@@ -376,6 +376,28 @@ btn-menu {
  /*  button */
  #btnStudAdd{}
 
+ /* ==================Student Profile/Attendance ===============*/
+/* Intro  */
+#divIntroStud{}
+#headIntroStud{}
+#pIntroStud{}
+
+/*  Profile */
+#divProfStud{}
+#headProfStud{}
+#imgProfStud{}
+#divAttenStud{}
+#headAttenStud{}
+
+.theadAttenStud{}
+.tbodyAttenStud{}
+
+/*  Message */
+#divMessStud{}
+#headMessStud{}
+.theadMessStud{}
+.tbodyMessStud{}
+
 
 @-webkit-keyframes fadeIn {
     from {
