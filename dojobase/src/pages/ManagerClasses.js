@@ -77,10 +77,6 @@ function ManagerClasses() {
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-</div>
-
-=======
   <form>
     <div className="grid-container">
       <div className="grid-x grid-padding-x">
@@ -128,7 +124,6 @@ function ManagerClasses() {
     </div>
   </form>
 </div>
->>>>>>> 2bb2ee9293d94b7f0224913db6df74971db6c435
 </div>
     );
 }
