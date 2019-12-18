@@ -1,4 +1,4 @@
-var Student = require("../models/Student");
+var db = require("../models/student")
 
 
 // Routes
@@ -7,7 +7,7 @@ module.exports = function(app) {
 
 //   get all students
   app.get("/api/students", function(req, res) {
-    Student.findAll({})
+    db.Student.findAll({})
     .then(function(results) {
       res.json(results);
     });
@@ -19,16 +19,17 @@ module.exports = function(app) {
     console.log("Student data:");
     console.log(req.body);
 
-    Student.create({
+    db.Student.create({
       name: req.body.name,
       address: req.body.address,
       phone: req.body.phone,
       email: req.body.email,
+      class: req.body.class,
       belt: req.body.belt,
       stripes: req.body.stripes,
       age: req.body.age,
       gender: req.body.gender,
-      health_concerns: req.body.health_concerns,
+      student_notes: req.body.health_concerns,
       created_at: req.body.created_at
     }).then(function(results) {
       res.end();
@@ -37,7 +38,7 @@ module.exports = function(app) {
 };
 
 app.post("/api/deleteStudent"), function(req, res) {
-    Student.destroy({
+    db.Student.destroy({
         where: {
             userName: req.body.userName
         }
