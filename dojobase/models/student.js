@@ -1,83 +1,89 @@
-var Sequelize = require("sequelize")
-var sequelize = require("./connection")
+module.exports = function (sequelize, DataTypes) {
 
-var Student = sequelize.define("student", {
-    name: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            notEmpty: true
-        }
-    },
-    userName: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            notEmpty: true
-        }
-    },
-    address: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            notEmpty: true
-        }
-    },
-    phone: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            isNumeric: true,
-            notEmpty: true
-        }
-    },
-    email: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            isEmail: true,
-            notEmpty: true
-        }
-    },
-    belt: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            isAlpha: true,
-            notEmpty: true
-        }
-    },
-    stripes: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            isNumeric: true,
-            notEmpty: true
-        }
-    },
-    age: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            isNumeric: true,
-            notEmpty: true
-        }
-    },
-    gender: {
-        type: Sequelize.STRING,
-        allowNull: false,
-        validate: {
-            isAlpha: true,
-            notEmpty: true
-        }
-    },
-    health_concerns: {
-        type: Sequelize.STRING,
-        allowNull: false,
-    },
-    created_at: Sequelize.DATE
-});
+    var Student = sequelize.define("student", {
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        userName: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        address: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        phone: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                isNumeric: true,
+                notEmpty: true
+            }
+        },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                isEmail: true,
+                notEmpty: true
+            }
+        },
+        class: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        belt: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        stripes: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        age: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        gender: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true
+            }
+        },
+        student_notes: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        created_at: DataTypes.DATE
+    });
 
-Student.sync();
+    // Student.associate = function (models) {
+    //     Student.hasMany(models.Attend)
+    // };
 
-module.exports = Student;
+    return Student;
+
+};
