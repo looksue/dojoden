@@ -28,6 +28,9 @@ function SideNav() {
                         <li>
                             <a href="/billing">Billing</a>
                         </li>
+                        <li>
+                            <a href="/attendance">Attendance</a>
+                        </li>
                     </ul>
                 </div>
             </div>
