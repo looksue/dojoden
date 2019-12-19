@@ -1,13 +1,12 @@
-var Sequelize = require("sequelize")
-var sequelize = require("./connection")
+module.exports = function (sequelize, DataTypes) {
 
-var Attend = sequelize.define("attend", {
-    userName: Sequelize.STRING,
-    class: Sequelize.STRING,
-    created_at: Sequelize.DATE,
-    attend_stamp: Sequelize.STRING
-})
 
-Attend.sync();
+    var Attend = sequelize.define("attend", {
+        stud_name: Sequelize.STRING,
+        class: Sequelize.STRING,
+        created_at: Sequelize.DATE,
+    })
 
-module.exports = Attend;
+    return Attend;
+
+}
