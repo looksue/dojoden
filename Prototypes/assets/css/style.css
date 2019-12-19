@@ -398,6 +398,21 @@ btn-menu {
 .theadMessStud{}
 .tbodyMessStud{}
 
+/* ==========Student Classes ============*/
+#divLessStud{}
+#headLessStud{}
+
+#divFundStud{}
+.btnFundStud{}
+#fundButtStud{}
+
+#divAdvStud{}
+.btnAdvStud{}
+#advButtStud{}
+
+#divCompStud{}
+.btnCompStud{}
+#compButtStud{}
 
 @-webkit-keyframes fadeIn {
     from {
