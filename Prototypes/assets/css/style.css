@@ -411,8 +411,8 @@ btn-menu {
 #advButtStud{}
 
 #divCompStud{}
-.btnCompStud
-#compButtStud
+.btnCompStud{}
+#compButtStud{}
 
 @-webkit-keyframes fadeIn {
     from {
