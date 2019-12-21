@@ -1,26 +1,24 @@
 // When user clicks add-btn
-$("#student-submit").on("click", function (event) {
+getElementById("#student-submit").on("click", function (event) {
   event.preventDefault();
 
   // Make a newStudent object
   var newStudent = {
-    name: $("#name").val().trim(),
-    address: $("#address").val().trim(),
-    phone: $("#phone").val().trim(),
-    email: $("#email").val().trim(),
-    belt: $("#belt").val().trim(),
-    stripes: $("#stripes").val().trim(),
-    age: $("#age").val().trim(),
-    gender: $("#gender").val().trim(),
-    health_concerns: $("#health_concerns").val().trim(),
+    name: getElementById("#name").val().trim(),
+    address: getElementById("#address").val().trim(),
+    phone: getElementById("#phone").val().trim(),
+    email: getElementById("#email").val().trim(),
+    belt: getElementById("#belt").val().trim(),
+    stripes: getElementById("#stripes").val().trim(),
+    age: getElementById("#age").val().trim(),
+    gender: getElementById("#gender").val().trim(),
+    health_concerns: getElementById("#health_concerns").val().trim(),
     created_at: moment().format("YYYY-MM-DD HH:mm:ss")
   };
 
   console.log(newStudent);
 
-  // Send an AJAX POST-request with jQuery
-  $.post("/api/new", newStudent)
-    // On success, run the following code
+  axios.post("/api/new", newStudent)
     .then(function () {
 
       var row = $("<div>");
@@ -42,24 +40,21 @@ $("#student-submit").on("click", function (event) {
     });
 
   // Empty each input box by replacing the value with an empty string
-  $("#author").val("");
-  $("#address").val("");
-  $("#phone").val("");
-  $("#email").val("");
-  $("#belt").val("");
-  $("#stripes").val("");
-  $("#age").val("");
-  $("#gender").val("");
-  $("#health_concerns").val("");
+  getElementById("#author").val("");
+  getElementById("#address").val("");
+  getElementById("#phone").val("");
+  getElementById("#email").val("");
+  getElementById("#belt").val("");
+  getElementById("#stripes").val("");
+  getElementById("#age").val("");
+  getElementById("#gender").val("");
+  getElementById("#health_concerns").val("");
 });
 
 // When the page loads, grab all of our chirps
-$.get("/api/all", function (data) {
+axios.get("/api/all", function (data) {
 
   if (data.length !== 0) {
-
-    var table = $("<table>").addClass("student-table");
-
     for (var i = 0; i < data.length; i++) {
 
       var row = $("<tr>")
