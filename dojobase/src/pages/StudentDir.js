@@ -2,30 +2,6 @@ import React, { Component } from "react";
 import StudentForm from "../components/studentForm"
 
 function StudentDir() {
-  function handleChange(state,e) {
-    this.setState({[state]: e.target.value});
-  }
-  
-  function handleLogin() {
-    console.log("First Name: ", this.state.firstName);
-  }
-  
-  function submitStudent(e) {
-      e.preventDefault();
-      console.log("new student");
-      // var newStudent = {
-      //   name: getElementById("#name").val().trim(),
-      //   address: getElementById("#address").val().trim(),
-      //   phone: getElementById("#phone").val().trim(),
-      //   email: getElementById("#email").val().trim(),
-      //   belt: getElementById("#belt").val().trim(),
-      //   stripes: getElementById("#stripes").val().trim(),
-      //   age: getElementById("#age").val().trim(),
-      //   gender: getElementById("#gender").val().trim(),
-      //   health_concerns: getElementById("#health_concerns").val().trim(),
-      //   created_at: moment().format("YYYY-MM-DD HH:mm:ss")
-      // };
-  };
 
   return (
     <div className="container-fluid">
@@ -177,101 +153,6 @@ function StudentDir() {
           <div className="accordion-content" data-tab-content>
             <p className="lead">Add A Student</p>
             <StudentForm />
-            {/* <form>
-              <div className="grid-container">
-                <div className="grid-x grid-padding-x">
-                  <div className="large-4 cell">
-                    <label>
-                      First Name
-                      <input type="text" id="firstName" placeholder />
-                    </label>
-                  </div>
-                  <div className="large-4 cell">
-                    <label>
-                      Last Name
-                      <input type="text" id="lastName" placeholder />
-                    </label>
-                  </div>
-                  <div className="large-4 cell">
-                    <div className="collapse">
-                      <label>Email </label>
-                      <div className="input-group">
-                        <input className="input-group-field" type="url" />
-                        <span className="input-group-label">.com</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="grid-container">
-                <div className="grid-x grid-padding-x">
-                  <div className="large-4 cell">
-                    <label>
-                      {" "}
-                      Class
-                      <select>
-                        <option value>Choose</option>
-                        <option value="Fundamentals">Fundamentals</option>
-                        <option value="Advanced Fundamentals">
-                          Advanced Fundamentals
-                        </option>
-                        <option value="Competition">Competition</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div className="large-4 cell">
-                    <label>
-                      Belt
-                      <select id="belt">
-                        <option value>Choose</option>
-                        <option value="White">White</option>
-                        <option value="Blue">Blue</option>
-                        <option value="Purple">Purple</option>
-                        <option value="Brown">Brown</option>
-                        <option value="Black">Black</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div className="large-4 cell">
-                    <label>
-                      Stripe
-                      <select>
-                        <option value>Choose</option>
-                        <option value={1}>One</option>
-                        <option value={2}>Two</option>
-                        <option value={3}>Three</option>
-                        <option value={4}>Four</option>
-                      </select>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="grid-container">
-                <div className="grid-x grid-padding-x">
-                  <div className="large-12 cell">
-                    <label>
-                      Student Notes
-                      <textarea
-                        placeholder="Add notes here"
-                        defaultValue={""}
-                      />
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div className="grid-container">
-                <div className="grid-x grid-padding-x"></div>
-              </div>
-              <div className="grid-container">
-                <div className="grid-x grid-padding-x">
-                  <div className="large-12 cell">
-                    <a href="#" className="button" onClick={submitStudent}>
-                      Add Student
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </form> */}
           </div>
         </li>
       </ul>
