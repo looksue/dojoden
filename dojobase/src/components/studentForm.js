@@ -7,7 +7,10 @@ class StudentForm extends React.Component {
         this.state = {
             firstName: '',
             lastName: '',
-
+            email: '',
+            class: '',
+            belt: '',
+            stripe: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -15,29 +18,35 @@ class StudentForm extends React.Component {
     }
 
     handleChange(event) {
-        this.setState({ firstName: event.target.firstName });
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+          });
     }
 
     handleSubmit(event) {
-        alert('New Students first Name: ' + this.state.firstName);
+        console.log("new student: " + this.state.firstName + " " + this.state.lastName);
+        let newStudent = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            class: this.state.class,
+            belt: this.state.belt,
+            stripe: this.state.stripe
+        };
+        console.log(newStudent);
+        this.setState({
+            firstName: '',
+            lastName: '',
+            email: '',
+            class: '',
+            belt: '',
+            stripe: ''
+        });
         event.preventDefault();
-    }
-
-    submitStudent(event) {
-        event.preventDefault();
-        console.log("new student: ");
-        // var newStudent = {
-        //   name: getElementById("#name").val().trim(),
-        //   address: getElementById("#address").val().trim(),
-        //   phone: getElementById("#phone").val().trim(),
-        //   email: getElementById("#email").val().trim(),
-        //   belt: getElementById("#belt").val().trim(),
-        //   stripes: getElementById("#stripes").val().trim(),
-        //   age: getElementById("#age").val().trim(),
-        //   gender: getElementById("#gender").val().trim(),
-        //   health_concerns: getElementById("#health_concerns").val().trim(),
-        //   created_at: moment().format("YYYY-MM-DD HH:mm:ss")
-        // };
     };
 
     render() {
@@ -54,15 +63,14 @@ class StudentForm extends React.Component {
                         <div className="large-4 cell">
                             <label>
                                 Last Name
-                      <input name="lastName" type="text" placeholder />
+                      <input name="lastName" type="text" value={this.state.lastName} onChange={this.handleChange} />
                             </label>
                         </div>
                         <div className="large-4 cell">
                             <div className="collapse">
                                 <label>Email </label>
                                 <div className="input-group">
-                                    <input className="input-group-field" type="url" />
-                                    <span className="input-group-label">.com</span>
+                                    <input className="input-group-field" name="email" type="text" value={this.state.email} onChange={this.handleChange} />
                                 </div>
                             </div>
                         </div>
@@ -74,11 +82,11 @@ class StudentForm extends React.Component {
                             <label>
                                 {" "}
                                 Class
-                      <select>
-                                    <option value>Choose</option>
+                      <select value={this.state.class} onChange={this.handleChange}>
+                      <option value="selectMessage">Please Select One</option>
                                     <option value="Fundamentals">Fundamentals</option>
-                                    <option value="Advanced Fundamentals">
-                                        Advanced Fundamentals
+                                    <option value="Advanced">
+                                        Advanced
                         </option>
                                     <option value="Competition">Competition</option>
                                 </select>
@@ -87,8 +95,8 @@ class StudentForm extends React.Component {
                         <div className="large-4 cell">
                             <label>
                                 Belt
-                      <select id="belt">
-                                    <option value>Choose</option>
+                      <select value={this.state.belt} onChange={this.handleChange}>
+                                    <option value>Please Select One</option>
                                     <option value="White">White</option>
                                     <option value="Blue">Blue</option>
                                     <option value="Purple">Purple</option>
@@ -100,7 +108,7 @@ class StudentForm extends React.Component {
                         <div className="large-4 cell">
                             <label>
                                 Stripe
-                      <select>
+                      <select value={this.state.stripe} onChange={this.handleChange}>
                                     <option value>Choose</option>
                                     <option value={1}>One</option>
                                     <option value={2}>Two</option>
@@ -111,7 +119,7 @@ class StudentForm extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="grid-container">
+                {/* <div className="grid-container">
                     <div className="grid-x grid-padding-x">
                         <div className="large-12 cell">
                             <label>
@@ -123,16 +131,14 @@ class StudentForm extends React.Component {
                             </label>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="grid-container">
                     <div className="grid-x grid-padding-x"></div>
                 </div>
                 <div className="grid-container">
                     <div className="grid-x grid-padding-x">
                         <div className="large-12 cell">
-                            <a href="#" className="button" onClick={this.submitStudent}>
-                                Add Student
-                    </a>
+                            <input type="submit" value="Add Student" className="button" />
                         </div>
                     </div>
                 </div>
