@@ -49,7 +49,6 @@
                         </button>
                     </div>
                 </nav>
-                <!-- Start React Component-->
                 <div class="container-fluid">
                     <div class="row">
                         <div class="large-12" class="divStudentsIntro">
@@ -76,8 +75,8 @@
                                                 <tr>
                                                     <td>Brian Helms</td>
                                                     <td>White</td>
-                                                    <td> <a href="#" class="button btnStudEdit" id="btnStudEdit">Edit</a></td>
-                                                    <td> <a href="#" class="button alert btnStudDelete" id="btnStudDelete">Delete</a> </td>
+                                                    <td> <a href="#" class="button" class="btnStudEdit" id="btnStudEdit">Edit</a></td>
+                                                    <td> <a href="#" class="button alert" class="btnStudDelete" id="btnStudDelete">Delete</a> </td>
                                                     <td>
                                                         <div class="switch">
                                                             <input class="switch-input" id="activeStudent" type="checkbox" name="activeStudent">
@@ -85,13 +84,13 @@
                                                             <span class="show-for-sr">Active Student</span>
                                                         </div>
                                                     </td>
-                                                    <td> <a href="#" class="button success btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
+                                                    <td> <a href="#" class="button success" class="btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Jeffery Huddleston</td>
                                                     <td>Blue</td>
-                                                    <td> <a href="#" class="button btnStudEdit" id="btnStudEdit">Edit</a></td>
-                                                    <td> <a href="#" class="button alert btnStudDelete" id="btnStudDelete">Delete</a> </td>
+                                                    <td> <a href="#" class="button" class="btnStudEdit" id="btnStudEdit">Edit</a></td>
+                                                    <td> <a href="#" class="button alert" class="btnStudDelete" id="btnStudDelete">Delete</a> </td>
                                                     <td>
                                                         <div class="switch">
                                                             <input class="switch-input" id="activeStudent1" type="checkbox" name="activeStudent1">
@@ -99,13 +98,13 @@
                                                             <span class="show-for-sr">Active Student</span>
                                                         </div>
                                                     </td>
-                                                    <td> <a href="#" class="button success btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
+                                                    <td> <a href="#" class="button success" lass="btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Sue Look</td>
                                                     <td>Black</td>
                                                     <td> <a href="#" class="button" class="btnStudEdit" id="btnStudEdit">Edit</a></td>
-                                                    <td> <a href="#" class="button alert btnStudDelete" id="btnStudDelete">Delete</a> </td>
+                                                    <td> <a href="#" class="button alert" lass="btnStudDelete" id="btnStudDelete">Delete</a> </td>
                                                     <td>
                                                         <div class="switch">
                                                             <input class="switch-input" id="activeStudent2" type="checkbox" name="activeStudent2">
@@ -113,7 +112,7 @@
                                                             <span class="show-for-sr">Active Student</span>
                                                         </div>
                                                     </td>
-                                                    <td> <a href="#" class="button success btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
+                                                    <td> <a href="#" class="button success" lass="btnStudInvoice" id="btnStudInvoice">Invoice</a> </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -121,7 +120,7 @@
                                 </li>
                                 <li class="accordion-item" data-accordion-item>
                                     <!-- Accordion tab title -->
-                                    <a href="#" class="accordion-title tabStudAdd">Add A Student</a>
+                                    <a href="#" class="accordion-title" class="tabStudAdd">Add A Student</a>
                                     <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
                                     <div class="accordion-content" data-tab-content>
                                         <p class="lead">Add A Student</p>
@@ -170,7 +169,7 @@
                                                     </div>
                                                     <div class="large-4 cell">
                                                         <label id="labStudStripe">Stripe
-                                                            <select id="inpStudStripe">
+                                                            <select>
                                                                 <option value="">Choose</option>
                                                                 <option value="1">One</option>
                                                                 <option value="2">Two</option>
@@ -182,84 +181,24 @@
                                                 </div>
                                             </div>
                                             <div class="grid-x grid-padding-x">
-                                                <div class="large-9 cell">
+                                                <div class="large-4 cell">
                                                     <label>Street Address
                                                         <input type="text" id="inpStudStreetAddress" placeholder=""/>
                                                     </label>
                                                 </div>
-                                                <div class="large-3 cell">
-                                                    <label>Unit
-                                                        <input type="text" id="inpStudUnit" placeholder=""/>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="grid-x grid-padding-x">
                                                 <div class="large-4 cell">
-                                                    <label>City
-                                                        <input type="text" id="inpStudCity" placeholder=""/>
+                                                    <label>Last Name
+                                                        <input type="text" id="inpStudLastName" placeholder=""/>
                                                     </label>
                                                 </div>
                                                 <div class="large-4 cell">
-                                                    <label>State
-                                                        <select id="inpStudState">
-                                                            <option value="AL">Alabama</option>
-                                                            <option value="AK">Alaska</option>
-                                                            <option value="AZ">Arizona</option>
-                                                            <option value="AR">Arkansas</option>
-                                                            <option value="CA">California</option>
-                                                            <option value="CO">Colorado</option>
-                                                            <option value="CT">Connecticut</option>
-                                                            <option value="DE">Delaware</option>
-                                                            <option value="DC">District Of Columbia</option>
-                                                            <option value="FL">Florida</option>
-                                                            <option value="GA">Georgia</option>
-                                                            <option value="HI">Hawaii</option>
-                                                            <option value="ID">Idaho</option>
-                                                            <option value="IL">Illinois</option>
-                                                            <option value="IN">Indiana</option>
-                                                            <option value="IA">Iowa</option>
-                                                            <option value="KS">Kansas</option>
-                                                            <option value="KY">Kentucky</option>
-                                                            <option value="LA">Louisiana</option>
-                                                            <option value="ME">Maine</option>
-                                                            <option value="MD">Maryland</option>
-                                                            <option value="MA">Massachusetts</option>
-                                                            <option value="MI">Michigan</option>
-                                                            <option value="MN">Minnesota</option>
-                                                            <option value="MS">Mississippi</option>
-                                                            <option value="MO">Missouri</option>
-                                                            <option value="MT">Montana</option>
-                                                            <option value="NE">Nebraska</option>
-                                                            <option value="NV">Nevada</option>
-                                                            <option value="NH">New Hampshire</option>
-                                                            <option value="NJ">New Jersey</option>
-                                                            <option value="NM">New Mexico</option>
-                                                            <option value="NY">New York</option>
-                                                            <option value="NC">North Carolina</option>
-                                                            <option value="ND">North Dakota</option>
-                                                            <option value="OH">Ohio</option>
-                                                            <option value="OK">Oklahoma</option>
-                                                            <option value="OR">Oregon</option>
-                                                            <option value="PA">Pennsylvania</option>
-                                                            <option value="RI">Rhode Island</option>
-                                                            <option value="SC">South Carolina</option>
-                                                            <option value="SD">South Dakota</option>
-                                                            <option value="TN">Tennessee</option>
-                                                            <option value="TX">Texas</option>
-                                                            <option value="UT">Utah</option>
-                                                            <option value="VT">Vermont</option>
-                                                            <option value="VA">Virginia</option>
-                                                            <option value="WA">Washington</option>
-                                                            <option value="WV">West Virginia</option>
-                                                            <option value="WI">Wisconsin</option>
-                                                            <option value="WY">Wyoming</option>
-                                                        </select>
-                                                    </label>
-                                                </div>
-                                                <div class="large-4 cell">
-                                                    <label>Zip Code
-                                                        <input type="text" id="inpStudZip" placeholder=""/>
-                                                    </label>
+                                                    <div class="collapse">
+                                                        <label>Email </label>
+                                                        <div class="input-group">
+                                                            <input class="input-group-field" type="url" id="inpStudEmail">
+                                                            <span class="input-group-label" id="spaStudCom">.com</span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="grid-container">
@@ -289,7 +228,6 @@
                         </div>
                     </div>
                 </div>
-                <!--End React Component-->
             </div>
         </div>
         <script src="../assets/js/vendor/jquery.js"></script>

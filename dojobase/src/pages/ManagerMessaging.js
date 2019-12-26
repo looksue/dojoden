@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MessagingForm from "../components/messagingForm"
 
 function ManagerMessaging() {
   return (
@@ -11,52 +12,7 @@ function ManagerMessaging() {
         <br />
       </p>
     </div>
-    <form>
-      <div className="grid-container">
-        <div className="grid-x grid-padding-x"></div>
-      </div>
-      <div className="grid-container">
-        <div className="grid-x grid-padding-x"></div>
-      </div>
-      <div className="grid-container">
-        <div className="grid-x grid-padding-x">
-          <div className="large-12 cell">
-            <label>
-              Recipients
-              <select>
-                <option value>Select</option>
-                <option value="all">Whole School</option>
-                <option value="starbuck">Essentals</option>
-                <option value="hotdog">Advanced Essentials</option>
-                <option value="apollo">Competition</option>
-              </select>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div className="grid-container">
-        <div className="grid-x grid-padding-x"></div>
-      </div>
-      <div className="grid-container">
-        <div className="grid-x grid-padding-x">
-          <div className="large-12 cell">
-            <label>
-              Message
-              <textarea placeholder defaultValue={""} />
-            </label>
-          </div>
-          <div className="grid-container">
-            <div className="grid-x grid-padding-x">
-              <div className="large-12 cell">
-                <a href="#" className="button">
-                  Send
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
+    <MessagingForm />
   </div>
 </div>
     );
