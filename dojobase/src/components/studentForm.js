@@ -38,6 +38,9 @@ class StudentForm extends React.Component {
             stripe: this.state.stripe
         };
         console.log(newStudent);
+
+        // grab newStudent object for database HERE
+
         this.setState({
             firstName: '',
             lastName: '',
