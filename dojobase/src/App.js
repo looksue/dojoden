@@ -10,6 +10,17 @@ import ManagerCalendar from "./pages/ManagerCalendar";
 import Sidenav from "./components/sideNav"
 import Navbar from "./components/navbar"
 
+/* Begin Okta setup for React */
+import Index from "./index";
+import { Security, ImplicitCallback } from '@okta/okta-react';
+const config = {
+  issuer: 'https://dev-434888.okta.com/oauth2/default',
+  redirectUri: window.location.origin + '/implicit/callback',
+  clientId: '0oa2d7k52a6MJ0hti357',
+  pkce: true
+}
+/* End Okta setup for React */
+
 function App() {
   return (
     <Router>
@@ -22,10 +33,13 @@ function App() {
           <Route exact path="/attendance" component={ManagerAttendance} />
           <Route exact path="/billing" component={ManagerBilling} />
           <Route exact path="/classes" component={ManagerClasses} />
-          <Route exact path="/calendar" component={ManagerCalendar} />    
+          <Route exact path="/calendar" component={ManagerCalendar} />
+          <Security {...config}>
+            <Route path='/' exact={true} component={Index}/>
+            <Route path='/implicit/callback' component={ImplicitCallback}/>
+          </Security>    
         </div>
       </div>
-     
     </Router>
   );
 }
