@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import API from "../utils/API";
 
 class StudentForm extends React.Component {
     constructor(props) {
@@ -37,9 +38,12 @@ class StudentForm extends React.Component {
             belt: this.state.belt,
             stripe: this.state.stripe
         };
-        console.log(newStudent);
 
         // grab newStudent object for database HERE
+        API.post("/new", newStudent)
+        .then(function() {
+            console.log(newStudent);
+        })
 
         this.setState({
             firstName: '',
