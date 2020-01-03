@@ -1,5 +1,6 @@
 import React, { Component } from "react"; 
 import StudentForm from "../components/studentForm"
+import StudentList from "../components/studentList"
 
 function StudentDir() {
 
@@ -17,7 +18,8 @@ function StudentDir() {
           </a>
           {/* Accordion tab content: it would start in the open state due to using the `is-active` state class. */}
           <div className="accordion-content" data-tab-content>
-            <table>
+            <StudentList />
+            {/* <table>
               <thead className="theadStudent">
                 <tr>
                   <th width={200}>Student Name</th>
@@ -141,7 +143,7 @@ function StudentDir() {
                   </td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
           </div>
         </li>
         <li className="accordion-item" data-accordion-item>
