@@ -5,7 +5,19 @@ var db = require("../models")
 // =============================================================
 module.exports = function(app) {
 
-//   get all students
+  // ====  Begin routes required for Okta
+
+  // '/' default home page to handle basic control of the app
+  app.get("/", function(req, res) {
+  });
+
+  // '/implicit/callback' where auth is handled by Okta
+  app.get("/implicit/callback", function(req, res) {
+  });
+  
+  // ====  End routes required for Okta
+
+  //   get all students
   app.get("/api/students", function(req, res) {
     db.Student.findAll({})
     .then(function(results) {
