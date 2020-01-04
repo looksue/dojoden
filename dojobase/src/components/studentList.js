@@ -7,6 +7,13 @@ class StudentList extends React.Component {
         students: []
     }
 
+    handleClick(event) {
+        API.delete("students/:id")
+        .then(function() {
+            console.log("student deleted");
+        })
+    }
+
     componentDidMount() {
         API.get(`students`)
             .then(res => {
@@ -31,7 +38,7 @@ class StudentList extends React.Component {
               <tbody className="tbodyStudents">   
             {this.state.students.map(student =>
                     <tr>
-                        <td>{student.firstName + student.lastName}</td>
+                        <td>{student.firstName + " " + student.lastName}</td>
                         <td>{student.belt}</td>
                         <td>
                         {" "}
@@ -41,7 +48,7 @@ class StudentList extends React.Component {
                     </td>
                         <td>
                         {" "}
-                        <a href="#" className="button alert btnStudDelete">
+                        <a href="#" className="button alert btnStudDelete" onClick={this.handleClick}>
                             Delete
             </a>{" "}
                     </td>

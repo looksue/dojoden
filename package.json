@@ -4,8 +4,14 @@
   "description": "A Martial Arts School Management App",
   "main": "server.js",
   "scripts": {
-    "test": "test",
-    "start": "node server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'dojobase/*'\" \"npm run client\"",
+    "client": "cd dojobase && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd dojobase && npm install",
+    "build": "cd dojobase && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,11 +28,16 @@
     "base64-img": "^1.0.4",
     "express": "^4.17.1",
     "formik": "^2.0.8",
+    "if-env": "^1.0.4",
+    "mysql2": "^2.1.0",
     "path": "^0.12.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
     "sequelize": "^5.21.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "concurrently": "^5.0.2"
+  }
 }
