@@ -1,0 +1,77 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import API from "../utils/API";
+
+class StudentList extends React.Component {
+    state = {
+        students: []
+    }
+
+    componentDidMount() {
+        API.get(`students`)
+            .then(res => {
+                const students = res.data;
+                this.setState({ students });
+            })
+    }
+
+    render() {
+        return (
+            <table>
+              <thead className="theadStudent">
+                <tr>
+                  <th width={200}>Student Name</th>
+                  <th>Belt</th>
+                  <th width={75}>Edit</th>
+                  <th width={75}>Delete</th>
+                  <th width={75}>Active Student</th>
+                  <th width={75}>Send Invoice</th>
+                </tr>
+              </thead>
+              <tbody className="tbodyStudents">   
+            {this.state.students.map(student =>
+                    <tr>
+                        <td>{student.firstName + student.lastName}</td>
+                        <td>{student.belt}</td>
+                        <td>
+                        {" "}
+                        <a href="#" className="button btnStudEdit">
+                            Edit
+            </a>
+                    </td>
+                        <td>
+                        {" "}
+                        <a href="#" className="button alert btnStudDelete">
+                            Delete
+            </a>{" "}
+                    </td>
+                        <td>
+                        <div className="switch">
+                            <input
+                                className="switch-input"
+                                id="activeStudent"
+                                type="checkbox"
+                                name="activeStudent"
+                            />
+                            <label
+                                className="switch-paddle"
+                                htmlFor="activeStudent"
+                            />
+                            <span className="show-for-sr">Active Student</span>
+                        </div>
+                    </td>
+                        <td>
+                        {" "}
+                        <a href="#" className="button success btnStudInvoice">
+                            Invoice
+            </a>{" "}
+                    </td>
+                    </tr>
+                )}
+                </tbody> 
+                </table>
+        )
+    }
+}
+
+export default StudentList;

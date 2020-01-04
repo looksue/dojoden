@@ -40,7 +40,7 @@ class StudentForm extends React.Component {
         };
 
         // grab newStudent object for database HERE
-        API.post("/new", newStudent)
+        API.post("newStudent", newStudent)
         .then(function() {
             console.log(newStudent);
         })
@@ -90,20 +90,20 @@ class StudentForm extends React.Component {
                             <label>
                                 {" "}
                                 Class
-                      <select value={this.state.value} class={this.state.value} onChange={this.handleChange}>
+                      <select name="class" value={this.state.value} onChange={this.handleChange}>
                       <option value="selectMessage">Please Select One</option>
                                     <option value="Fundamentals">Fundamentals</option>
                                     <option value="Advanced">
                                         Advanced
                         </option>
-                                    <option class="Competition">Competition</option>
+                                    <option value="Competition">Competition</option>
                                 </select>
                             </label>
                         </div>
                         <div className="large-4 cell">
                             <label>
                                 Belt
-                      <select value={this.state.value} belt={this.state.value} onChange={this.handleChange}>
+                      <select name="belt" value={this.state.value} onChange={this.handleChange}>
                                     <option value>Please Select One</option>
                                     <option value="White">White</option>
                                     <option value="Blue">Blue</option>
@@ -116,7 +116,7 @@ class StudentForm extends React.Component {
                         <div className="large-4 cell">
                             <label>
                                 Stripe
-                      <select value={this.state.value} stripe={this.state.value} onChange={this.handleChange}>
+                      <select name="stripe" value={this.state.value} onChange={this.handleChange}>
                                     <option value>Choose</option>
                                     <option value={1}>One</option>
                                     <option value={2}>Two</option>
