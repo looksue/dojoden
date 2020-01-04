@@ -3,59 +3,56 @@ var db = require("../models")
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = function (app) {
 
   // ====  Begin routes required for Okta
 
   // '/' default home page to handle basic control of the app
-  app.get("/", function(req, res) {
+  app.get("/whatever", function (req, res) {
+    res.end("hello world");
   });
 
   // '/implicit/callback' where auth is handled by Okta
-  app.get("/implicit/callback", function(req, res) {
+  app.get("/implicit/callback", function (req, res) {
   });
-  
+
   // ====  End routes required for Okta
 
   //   get all students
-  app.get("/api/students", function(req, res) {
+  app.get("/api/students", function (req, res) {
     db.Student.findAll({})
-    .then(function(results) {
-      res.json(results);
-    });
+      .then(function (results) {
+        res.json(results);
+      });
   });
 
   // Add a student
-  app.post("/api/newStudent", function(req, res) {
+  app.post("/api/newStudent", function (req, res) {
 
     console.log("Student data:");
     console.log(req.body);
 
     db.Student.create({
-      name: req.body.name,
-      address: req.body.address,
-      phone: req.body.phone,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       email: req.body.email,
       class: req.body.class,
       belt: req.body.belt,
-      stripes: req.body.stripes,
-      age: req.body.age,
-      gender: req.body.gender,
-      student_notes: req.body.health_concerns,
-      created_at: req.body.created_at
-    }).then(function(results) {
+      stripes: req.body.stripes
+    }).then(function (results) {
       res.end();
     });
   });
-};
 
-app.post("/api/deleteStudent"), function(req, res) {
+
+  app.delete("/api/students"), function (req, res) {
     db.Student.destroy({
-        where: {
-            userName: req.body.userName
-        }
-    }).then(function(results) {
-        console.log("Student Deleted.")
-        res.end();
+      where: {
+        id: req.body.id
+      }
+    }).then(function (results) {
+      console.log("Student Deleted.")
+      res.end();
     })
+  };
 };
