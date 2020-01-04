@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import API from "../utils/API";
 
 class StudentForm extends React.Component {
     constructor(props) {
@@ -37,14 +38,21 @@ class StudentForm extends React.Component {
             belt: this.state.belt,
             stripe: this.state.stripe
         };
-        console.log(newStudent);
+
+        // grab newStudent object for database HERE
+        API.post("/new", newStudent)
+        .then(function() {
+            console.log(newStudent);
+        })
+
         this.setState({
             firstName: '',
             lastName: '',
             email: '',
             class: '',
             belt: '',
-            stripe: ''
+            stripe: '',
+            value:''
         });
         event.preventDefault();
     };
@@ -82,20 +90,20 @@ class StudentForm extends React.Component {
                             <label>
                                 {" "}
                                 Class
-                      <select value={this.state.class} onChange={this.handleChange}>
+                      <select value={this.state.value} class={this.state.value} onChange={this.handleChange}>
                       <option value="selectMessage">Please Select One</option>
                                     <option value="Fundamentals">Fundamentals</option>
                                     <option value="Advanced">
                                         Advanced
                         </option>
-                                    <option value="Competition">Competition</option>
+                                    <option class="Competition">Competition</option>
                                 </select>
                             </label>
                         </div>
                         <div className="large-4 cell">
                             <label>
                                 Belt
-                      <select value={this.state.belt} onChange={this.handleChange}>
+                      <select value={this.state.value} belt={this.state.value} onChange={this.handleChange}>
                                     <option value>Please Select One</option>
                                     <option value="White">White</option>
                                     <option value="Blue">Blue</option>
@@ -108,7 +116,7 @@ class StudentForm extends React.Component {
                         <div className="large-4 cell">
                             <label>
                                 Stripe
-                      <select value={this.state.stripe} onChange={this.handleChange}>
+                      <select value={this.state.value} stripe={this.state.value} onChange={this.handleChange}>
                                     <option value>Choose</option>
                                     <option value={1}>One</option>
                                     <option value={2}>Two</option>
