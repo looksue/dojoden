@@ -4,6 +4,14 @@ var Sequelize = require("sequelize");
 var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
+
+if (env === "production") {
+  config.username = process.env.DB_USER;
+  config.password = process.env.DB_PASSWORD;
+  config.database = process.env.DB_NAME;
+  config.host = process.env.DB_HOST;
+  config.port = process.env.DB_PORT;
+}
 var db = {};
 
 if (config.use_env_variable) {
