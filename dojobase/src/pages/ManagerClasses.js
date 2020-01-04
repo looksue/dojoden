@@ -4,6 +4,7 @@ function ManagerClasses() {
   return (
 <div className="container-fluid">
   <div className="row">
+  
     <div className="large-12">
       <h1>Classes</h1>
       <p className="lead">

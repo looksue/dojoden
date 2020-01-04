@@ -16,11 +16,11 @@
       "dialect": "mysql"
     },
     "production": {
-      "username": "root",
+      "username": null,
       "password": null,
-      "database": "database_production",
-      "host": "127.0.0.1",
-      "port": 3306,
+      "database": null,
+      "host": null,
+      "port": null,
       "dialect": "mysql"
     }
   }
