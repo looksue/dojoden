@@ -1,32 +1,17 @@
 module.exports = function (sequelize, DataTypes) {
 
-    var Student = sequelize.define("student", {
-        name: {
+    var Student = sequelize.define("Student", {
+        firstName: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 notEmpty: true
             }
         },
-        userName: {
+        lastName: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                notEmpty: true
-            }
-        },
-        address: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                notEmpty: true
-            }
-        },
-        phone: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                isNumeric: true,
                 notEmpty: true
             }
         },
@@ -52,32 +37,13 @@ module.exports = function (sequelize, DataTypes) {
                 notEmpty: true
             }
         },
-        stripes: {
-            type: DataTypes.STRING,
-            allowNull: false,
+        stripe: {
+            type: DataTypes.INTEGER,
+            // allowNull: false,
             validate: {
                 notEmpty: true
             }
         },
-        age: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                notEmpty: true
-            }
-        },
-        gender: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                notEmpty: true
-            }
-        },
-        student_notes: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        created_at: DataTypes.DATE
     });
 
     // Student.associate = function (models) {

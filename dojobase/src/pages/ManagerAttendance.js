@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 function ManagerAttendance() {
   return (
-    <div class="container-fluid">
+    <div className="container-fluid">
       <div className="row">
         <div className="large-12">
           <h1>Attendance</h1>

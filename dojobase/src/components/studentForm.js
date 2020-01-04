@@ -29,7 +29,6 @@ class StudentForm extends React.Component {
     }
 
     handleSubmit(event) {
-        console.log("new student: " + this.state.firstName + " " + this.state.lastName);
         let newStudent = {
             firstName: this.state.firstName,
             lastName: this.state.lastName,
@@ -54,7 +53,8 @@ class StudentForm extends React.Component {
             stripe: '',
             value:''
         });
-        event.preventDefault();
+
+        this.setState(this.state);
     };
 
     render() {

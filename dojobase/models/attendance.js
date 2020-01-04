@@ -2,9 +2,9 @@ module.exports = function (sequelize, DataTypes) {
 
 
     var Attend = sequelize.define("attend", {
-        stud_name: Sequelize.STRING,
-        class: Sequelize.STRING,
-        created_at: Sequelize.DATE,
+        stud_name: DataTypes.STRING,
+        class: DataTypes.STRING,
+        created_at: DataTypes.DATE,
     })
 
     return Attend;
