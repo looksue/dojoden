@@ -11,25 +11,25 @@ function SideNav() {
                 <div className="row menu selections">
                     <ul className="sidebar-nav">
                         <li>
-                            <a href="/allstudents">Students</a>
+                            <Link to="/allStudents">Students</Link>
                         </li>
                         <li>
-                            <a href="/classes">Classes</a>
+                            <Link to="/classes">Classes</Link>
                         </li>
                         <li>
-                            <a href="/messaging">Messaging</a>
+                            <Link to="/messaging">Messaging</Link>
                         </li>
                         <li>
-                            <a href="/calendar">Calendar</a>
+                            <Link to="/calendar">Calendar</Link>
                         </li>
                         <li>
-                            <a href="#">Company</a>
+                            <Link to="#">Company</Link>
                         </li>
                         <li>
-                            <a href="/billing">Billing</a>
+                            <Link to="/billing">Billing</Link>
                         </li>
                         <li>
-                            <a href="/attendance">Attendance</a>
+                            <Link to="/attendance">Attendance</Link>
                         </li>
                     </ul>
                 </div>
