@@ -3,7 +3,7 @@ import MessagingForm from "../components/messagingForm"
 
 function ManagerMessaging() {
   return (
-<div classname="container-fluid">
+<div className="container-fluid">
   <div className="row">
     <div className="large-12">
       <h1>Messaging</h1>

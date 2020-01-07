@@ -2,6 +2,12 @@ import React, { Component } from "react";
 
 function ManagerClasses() {
   return (
+    <div className="container-fluid">
+    <div className="row">
+      <div className="large-12">
+        <h1>Classes</h1>
+        </div>
+        </div>
 <div className="grid-container">
   <div className="grid-x">
     <div className="card small-12 medium-4 large-4">
@@ -49,6 +55,7 @@ function ManagerClasses() {
       </div>
     </div>
   </div>
+</div>
 </div>
 
 
