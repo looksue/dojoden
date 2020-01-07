@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import './App.css';
+// import './App.css';
+import './App.scss';
 import StudentDir from "./pages/StudentDir";
 import ManagerMessaging from "./pages/ManagerMessaging";
 import ManagerBilling from "./pages/ManagerBilling";
@@ -9,6 +10,7 @@ import ManagerAttendance from "./pages/ManagerAttendance";
 import ManagerCalendar from "./pages/ManagerCalendar";
 import Sidenav from "./components/sideNav"
 import Navbar from "./components/navbar"
+
 
 /* Begin Okta setup for React */
 import Index from "./index";
