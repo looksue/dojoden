@@ -1,12 +1,11 @@
 var db = require("../models")
 
-
 // Routes
 // =============================================================
 module.exports = function (app) {
 
   // ====  Begin routes required for Okta
-
+  
   // '/' default home page to handle basic control of the app
   app.get("/whatever", function (req, res) {
     res.end("hello world");
