@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import './App.css';
+import 'firebase/auth';
 import './App.scss';
 import StudentDir from "./pages/StudentDir";
 import ManagerMessaging from "./pages/ManagerMessaging";
@@ -84,6 +84,14 @@ export default App;
     </Router>
   );
 }
+}
+
+
+const firebaseAppAuth = firebaseApp.auth();
+
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
 
 export default App;
 */
