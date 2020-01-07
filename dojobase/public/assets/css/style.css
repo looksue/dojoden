@@ -1,7 +1,17 @@
+* {
+    Font-Family: 'Poppins', Sans-Serif;
+}
 body {
     background: #fdf6dc;
 }
-
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Bungee', serif;
+}
+h1,h2,h3,h4 {
+    color:#dd4b2a;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    -webkit-text-stroke: 1px #296166;
+}
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
