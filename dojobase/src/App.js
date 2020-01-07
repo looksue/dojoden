@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import withFirebaseAuth from 'react-with-firebase-auth'
-import * as firebase from 'firebase/app';
 import 'firebase/auth';
-import firebaseConfig from './firebaseConfig';
-import './App.css';
-// import './App.css';
 import './App.scss';
 import StudentDir from "./pages/StudentDir";
 import ManagerMessaging from "./pages/ManagerMessaging";
