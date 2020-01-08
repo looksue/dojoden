@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
 
 function ManagerCalendar() {
   return (
@@ -21,13 +20,13 @@ function ManagerCalendar() {
         <tbody>
           <tr className="table-expand-row-content">
             <td colSpan={8} className="table-expand-row-nested">
-              {" "}
+              
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
                 unde quaerat reprehenderit ipsa ipsam, adipisci facere
                 repellendus impedit at, quisquam dicta optio veniam quia
                 nesciunt, inventore quod in neque magni?
-              </p>{" "}
+              </p>
             </td>
           </tr>
           <tr className="table-expand-row" data-open-details>
@@ -40,13 +39,13 @@ function ManagerCalendar() {
           </tr>
           <tr className="table-expand-row-content">
             <td colSpan={8} className="table-expand-row-nested">
-              {" "}
+              
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
                 unde quaerat reprehenderit ipsa ipsam, adipisci facere
                 repellendus impedit at, quisquam dicta optio veniam quia
                 nesciunt, inventore quod in neque magni?
-              </p>{" "}
+              </p>
             </td>
           </tr>
           <tr className="table-expand-row" data-open-details>
@@ -59,13 +58,13 @@ function ManagerCalendar() {
           </tr>
           <tr className="table-expand-row-content">
             <td colSpan={8} className="table-expand-row-nested">
-              {" "}
+              
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
                 unde quaerat reprehenderit ipsa ipsam, adipisci facere
                 repellendus impedit at, quisquam dicta optio veniam quia
                 nesciunt, inventore quod in neque magni?
-              </p>{" "}
+              </p>
             </td>
           </tr>
           <tr className="table-expand-row" data-open-details>
@@ -78,13 +77,13 @@ function ManagerCalendar() {
           </tr>
           <tr className="table-expand-row-content">
             <td colSpan={8} className="table-expand-row-nested">
-              {" "}
+              
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
                 unde quaerat reprehenderit ipsa ipsam, adipisci facere
                 repellendus impedit at, quisquam dicta optio veniam quia
                 nesciunt, inventore quod in neque magni?
-              </p>{" "}
+              </p>
             </td>
           </tr>
           <tr className="table-expand-row" data-open-details>
@@ -97,13 +96,13 @@ function ManagerCalendar() {
           </tr>
           <tr className="table-expand-row-content">
             <td colSpan={8} className="table-expand-row-nested">
-              {" "}
+              
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
                 unde quaerat reprehenderit ipsa ipsam, adipisci facere
                 repellendus impedit at, quisquam dicta optio veniam quia
                 nesciunt, inventore quod in neque magni?
-              </p>{" "}
+              </p>
             </td>
           </tr>
           <tr className="table-expand-row" data-open-details>
@@ -114,6 +113,17 @@ function ManagerCalendar() {
               More Info <span className="expand-icon" />
             </td>
           </tr>
+          <tr className="table-expand-row-content">
+          <td colSpan={8} className="table-expand-row-nested">
+              
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                unde quaerat reprehenderit ipsa ipsam, adipisci facere
+                repellendus impedit at, quisquam dicta optio veniam quia
+                nesciunt, inventore quod in neque magni?
+              </p>
+            </td>
+            </tr>
         </tbody>
       </table>
       <div className="row">
@@ -128,7 +138,7 @@ function ManagerCalendar() {
                     type="text"
                     className="inpCalendar"
                     id="inpEventTitle"
-                    placeholder="ß"
+                    placeholder="Event Title Here"
                   />
                 </label>
               </div>
@@ -167,9 +177,9 @@ function ManagerCalendar() {
           <div className="grid-container">
             <div className="grid-x grid-padding-x">
               <div className="large-12 cell">
-                <Link to="#" className="button btnCalendar" id="btnCalendar">
+                <a href="#" className="button btnCalendar" id="btnCalendar">
                   Button
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -23,9 +23,9 @@ function SideNav() {
                         <li>
                             <Link to="/calendar">Calendar</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="#">Company</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to="/billing">Billing</Link>
                         </li>
