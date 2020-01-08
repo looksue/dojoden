@@ -38,8 +38,6 @@ export default withAuth(class Index extends Component {
 
     return (
       <div>
-        <Link to='/'>Sample Unprotected (/)</Link><br />
-        <Link to='/protected'>Sample Protected</Link><br />
         {button}
       </div>
     );

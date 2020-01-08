@@ -10,6 +10,9 @@ function SideNav() {
                 </div>
                 <div className="row menu selections">
                     <ul className="sidebar-nav">
+                    <li>
+                            <Link to='/'>Home</Link>
+                        </li>
                         <li>
                             <Link to="/allStudents">Students</Link>
                         </li>
