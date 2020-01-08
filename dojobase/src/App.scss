@@ -50,14 +50,36 @@ $primary: #296166;
 body {
   background: #fdf6dc;
 }
-
+h1 {
+  text-align:center;
+}
 h1,h2,h3,h4,h5,h6 {
   font-family: $hl-font;
+  text-align: center;
 }
 h1,h2,h3,h4 {
   color:$orange;
   text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
-  -webkit-text-stroke: 1px $green
+  -webkit-text-stroke: 1px $green;
+  
+}
+h1:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  margin-bottom: 50px;
+  border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+h3:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  margin-bottom: 50px;
+  border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
 }
 .accordion-item {
   a {

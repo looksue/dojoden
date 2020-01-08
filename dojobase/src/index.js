@@ -7,16 +7,15 @@ import * as serviceWorker from './serviceWorker';
 // ==== Begin scripts required for Okta login/logout buttons
 
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { withAuth } from '@okta/okta-react';
 
-export default withAuth(class Home extends Component {
+export default withAuth(class Index extends Component {
   constructor(props) {
     super(props);
     this.state = { authenticated: null };
     this.checkAuthentication = this.checkAuthentication.bind(this);
     this.checkAuthentication();
-    this.login = this.login.bind(this);
-    this.logout = this.logout.bind(this);
   }
 
   async checkAuthentication() {
@@ -30,21 +29,20 @@ export default withAuth(class Home extends Component {
     this.checkAuthentication();
   }
 
-  async login() {
-    // Redirect to '/' after login
-    this.props.auth.login('/');
-  }
-
-  async logout() {
-    // Redirect to '/' after logout
-    this.props.auth.logout('/');
-  }
-
   render() {
     if (this.state.authenticated === null) return null;
-    return this.state.authenticated ?
-      <button onClick={this.logout}>Logout</button> :
-      <button onClick={this.login}>Login</button>;
+
+    const button = this.state.authenticated ?
+      <button onClick={() => { this.props.auth.logout() }}>Logout</button> :
+      <button onClick={() => { this.props.auth.login() }}>Login</button>;
+
+    return (
+      <div>
+        <Link to='/'></Link><br />
+        <Link to='/protected'></Link><br />
+        {button}
+      </div>
+    );
   }
 });
 // ==== End scripts required for Okta login/logout buttons
