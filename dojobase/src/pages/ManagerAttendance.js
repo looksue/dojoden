@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function ManagerAttendance() {
   return (
@@ -9,19 +10,19 @@ function ManagerAttendance() {
           <p className="lead">Attendance Per Class.</p>
           <ul className="tabs" data-tabs id="panel-content293">
             <li className="tabs-title is-active">
-              <a href="#panel294" aria-selected="true" id="liFundamentals">
+              <Link to="#panel294" aria-selected="true" id="liFundamentals">
                 Fundamentals
-              </a>
+            </Link>
             </li>
             <li className="tabs-title">
-              <a href="#panel295" id="liAdvanced">
+              <Link to="#panel295" id="liAdvanced">
                 Advanced
-              </a>
+            </Link>
             </li>
             <li className="tabs-title">
-              <a href="#panel296" id="liCompTeam">
+              <Link to="#panel296" id="liCompTeam">
                 Comp Team
-              </a>
+            </Link>
             </li>
           </ul>
           <div className="tabs-content" data-tabs-content="panel-content293">
@@ -90,9 +91,9 @@ function ManagerAttendance() {
                   </tr>
                 </tbody>
               </table>
-              <a href="#" className="button btnAttendance" id="btnAttendance">
+              <Link to="#" className="button btnAttendance" id="btnAttendance">
                 Submit Attendance
-              </a>
+            </Link>
             </div>
             <div className="tabs-panel" id="panel295">
               <table>
@@ -213,9 +214,9 @@ function ManagerAttendance() {
                   </tr>
                 </tbody>
               </table>
-              <a href="#" className="button">
+              <Link to="#" className="button">
                 Submit Attendence
-              </a>
+            </Link>
             </div>
             <div className="tabs-panel" id="panel296">
               <table>
@@ -390,9 +391,9 @@ function ManagerAttendance() {
                   </tr>
                 </tbody>
               </table>
-              <a href="#" className="button">
+              <Link to="#" className="button">
                 Submit Attendence
-              </a>
+            </Link>
             </div>
           </div>
         </div>
