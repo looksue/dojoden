@@ -7,8 +7,8 @@ function ManagerMessaging() {
   <div className="row">
     <div className="large-12">
       <h1>Messaging</h1>
-      <p>
-        To send a message to your students, Make sure to keep your content here
+      <p className="lead">
+        To send a message to your students, fill in this form.
         <br />
       </p>
     </div>
