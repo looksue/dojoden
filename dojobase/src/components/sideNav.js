@@ -7,7 +7,7 @@ function SideNav() {
             <div id="sidebar-wrapper">
                 <div className="row">
                 <Link to="/">
-                    <img src="assets/img/MataLeauLOGO_noBG.png" /></Link>
+                    <img src="assets/img/MataLeauLOGO_noBG.png" alt="Company Logo" /></Link>
                 </div>
                 <div className="row menu selections">
                     <ul className="sidebar-nav">
