@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import StudentForm from "./components/studentForm"
+import StudentList from "./components/studentList"
 
 // ==== Begin scripts required for Okta login/logout buttons
 
@@ -41,7 +43,19 @@ export default withAuth(class Index extends Component {
         <Link to='/'></Link><br />
         <Link to='/protected'></Link><br />
         {button}
+        <div className="container-fluid">
+      <div className="row">
+        <div className="large-12">
+          <h1>Welcome to Mata Leau</h1>
+          <h3>Dojo Management System</h3>
+          <p className="lead text-center">Mata Leau is a dojo management application that is designed to make your classes run smoothly.</p> <p className="text-center">Use Mata Leau with all your classes and student's information is at your fingertips.</p>
+         
+        </div>
       </div>
+    </div>
+      </div>
+  
+      
     );
   }
 });
