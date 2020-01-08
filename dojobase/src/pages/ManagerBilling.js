@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function ManagerBilling() {
   return (
@@ -6,12 +7,6 @@ function ManagerBilling() {
       <div className="row">
         <div className="large-12">
           <h1>Billing</h1>
-          <p>
-            This template has a responsive menu toggling system. The menu will
-            appear collapsed on smaller screens, and will appear non-collapsed
-            on larger screens.
-          </p>
-          <p>Make sure to keep your content here</p>
         </div>
         <form>
           <div className="grid-container"></div>
@@ -92,9 +87,9 @@ function ManagerBilling() {
                 </label>
               </div>
               <div className="large-12 cell">
-                <a href="#" className="button btnBill" id="btnBill">
+                <Link to="#" className="button btnBill" id="btnBill">
                   Button
-                </a>
+                </Link>
               </div>
             </div>
           </div>

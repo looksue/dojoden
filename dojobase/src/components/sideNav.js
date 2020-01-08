@@ -6,7 +6,7 @@ function SideNav() {
     return (
             <div id="sidebar-wrapper">
                 <div className="row">
-                    <img src="assets/img/MataLeauLOGO_noBG.png" />
+                    <img src="assets/img/MataLeauLOGO_noBG.png" alt="company logo" />
                 </div>
                 <div className="row menu selections">
                     <ul className="sidebar-nav">

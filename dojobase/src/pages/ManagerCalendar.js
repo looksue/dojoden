@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function ManagerCalendar() {
   return (
@@ -166,9 +167,9 @@ function ManagerCalendar() {
           <div className="grid-container">
             <div className="grid-x grid-padding-x">
               <div className="large-12 cell">
-                <a href="#" className="button btnCalendar" id="btnCalendar">
+                <Link to="#" className="button btnCalendar" id="btnCalendar">
                   Button
-                </a>
+                </Link>
               </div>
             </div>
           </div>
