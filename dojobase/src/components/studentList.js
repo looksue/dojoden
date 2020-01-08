@@ -42,15 +42,15 @@ class StudentList extends React.Component {
                         <td>{student.belt}</td>
                         <td>
                         {" "}
-                        <a href="#" className="button btnStudEdit">
+                        <Link to="#" className="button btnStudEdit">
                             Edit
-            </a>
+            </Link>
                     </td>
                         <td>
                         {" "}
-                        <a href="#" className="button alert btnStudDelete" onClick={this.handleClick}>
+                        <Link to="#" className="button alert btnStudDelete" onClick={this.handleClick}>
                             Delete
-            </a>{" "}
+            </Link>{" "}
                     </td>
                         <td>
                         <div className="switch">
@@ -69,9 +69,9 @@ class StudentList extends React.Component {
                     </td>
                         <td>
                         {" "}
-                        <a href="#" className="button success btnStudInvoice">
+                        <Link to="#" className="button success btnStudInvoice">
                             Invoice
-            </a>{" "}
+            </Link>{" "}
                     </td>
                     </tr>
                 )}

@@ -58,32 +58,3 @@ class App extends Component {
 };
 
 export default App;
-
-/* End Okta setup for React */
-
-/* function App() {
-  return (
-    <Router>
-      <div id="wrapper" className="wrapper-content">
-        <Sidenav />
-        <div id="page-content-wrapper">
-          <Navbar />
-          <Route exact path="/allStudents" component={StudentDir} />
-          <Route exact path="/messaging" component={ManagerMessaging} />
-          <Route exact path="/attendance" component={ManagerAttendance} />
-          <Route exact path="/billing" component={ManagerBilling} />
-          <Route exact path="/classes" component={ManagerClasses} />
-          <Route exact path="/calendar" component={ManagerCalendar} />
-          <Security {...config}>
-            <Route path='/' exact={true} component={Index}/>
-            <Route path='/implicit/callback' component={ImplicitCallback}/>
-          </Security>
-        </div>
-      </div>
-    </Router>
-  );
-}
-}
-
-export default App;
-*/
