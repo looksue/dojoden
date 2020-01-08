@@ -382,3 +382,18 @@ btn-menu {
 .selections {
   margin-top: 10px;
 }
+// Login Button
+.loginButton {
+  background-color: $orange;
+  color: $tan !important;
+  position:absolute;
+  top:0;
+  right:0;
+  margin-right: 15px;
+  margin-top: 15px;
+  padding:1%;
+  font-family: $hl-font;
+  text-align: center;
+  border: 1px solid $green;
+
+}
