@@ -6,8 +6,8 @@ var db = require("./dojobase/models");
 
 // Begin Manage CORS
 
-var cors = require("cors");
-app.use(cors());
+// var cors = require("cors");
+// app.use(cors());
 
 var allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
