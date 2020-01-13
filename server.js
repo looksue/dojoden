@@ -4,6 +4,8 @@ const PORT = process.env.PORT || 3000; // was 3001
 const app = express();
 var db = require("./dojobase/models");
 
+// Begin Manage CORS
+
 var allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
@@ -18,14 +20,17 @@ var allowCrossDomain = function(req, res, next) {
   }
 };
 
-//app.configure(function () {
-  // app.use(express.bodyParser());
-  // app.use(express.methodOverride());
-  // app.use(app.router);
-   app.use(allowCrossDomain);
-  // app.use(express.static(path.join(application_root, "public")));
-  // app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
- //});
+app.use(allowCrossDomain);
+
+app.all('*', function(req, res, next) {
+  var origin = req.get('origin'); 
+  res.header('Access-Control-Allow-Origin', origin);
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
+// End Manage CORS
 
  app.use(express.urlencoded({ extended: true }));
  app.use(express.json());
