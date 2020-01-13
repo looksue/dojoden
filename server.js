@@ -6,6 +6,9 @@ var db = require("./dojobase/models");
 
 // Begin Manage CORS
 
+var cors = require("cors");
+app.use(cors());
+
 var allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
@@ -55,8 +58,8 @@ app.get("*", (req, res) => {
   });  
 
   db.sequelize.sync().then(function() {
-    app.listen(PORT, function() {
-      console.log("App listening on PORT " + PORT);
-    });
+    //app.listen(PORT, function() {
+    //  console.log("App listening on PORT " + PORT);
+    //});
   });
   

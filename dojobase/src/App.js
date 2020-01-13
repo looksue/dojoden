@@ -10,7 +10,6 @@ import ManagerCalendar from "./pages/ManagerCalendar";
 import Sidenav from "./components/sideNav";
 import Navbar from "./components/navbar";
 
-
 /* Begin Okta setup for React */
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
 import Index from './index';
