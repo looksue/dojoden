@@ -6,7 +6,7 @@ var db = require("./dojobase/models");
 
 // Begin Manage CORS
 
-var cors = require("cors");
+/* var cors = require("cors");
 app.use(cors());
 
 var allowCrossDomain = function(req, res, next) {
@@ -33,6 +33,13 @@ app.all('*', function(req, res, next) {
   next();
 });
 
+// test proxy to fix CORS error on Heroku
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
+*/
 // End Manage CORS
 
  app.use(express.urlencoded({ extended: true }));
@@ -42,12 +49,6 @@ app.all('*', function(req, res, next) {
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("dojobase/build"));
 }
-
-// test proxy to fix CORS error on Heroku
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
 
 require("./dojobase/routes/studentAPI")(app);
 // require("./dojobase/routes/attendanceAPI")(app);
