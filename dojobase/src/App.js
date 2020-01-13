@@ -15,7 +15,6 @@ import Navbar from "./components/navbar";
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
 import Index from './index';
 import Login from './Login';
-import Protected from './Protected';
 
 const config = {
   issuer: 'https://dev-434888.okta.com/oauth2/default',
@@ -44,7 +43,6 @@ class App extends Component {
                 <Route exact path="/classes" component={ManagerClasses} />
                 <Route exact path="/calendar" component={ManagerCalendar} />
 
-                <SecureRoute path='/protected' component={Protected} />
                 <SecureRoute exact path="/allStudents" component={StudentDir} />
                 <SecureRoute exact path="/messaging" component={ManagerMessaging} />
                 <SecureRoute exact path="/attendance" component={ManagerAttendance} />

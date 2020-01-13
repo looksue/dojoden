@@ -40,8 +40,6 @@ export default withAuth(class Index extends Component {
 
     return (
       <div>
-        <Link to='/'></Link><br />
-        <Link to='/protected'></Link><br />
         <div className="loginButton">{button}</div>
         <div className="container-fluid">
       <div className="row">
