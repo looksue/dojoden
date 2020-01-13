@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import StudentForm from "./components/studentForm"
-import StudentList from "./components/studentList"
+import StudentForm from "./components/studentForm";
+import StudentList from "./components/studentList";
 
 // ==== Begin scripts required for Okta login/logout buttons
 
