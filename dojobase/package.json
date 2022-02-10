@@ -12,7 +12,7 @@
     "base64-img": "^1.0.4",
     "concurrently": "^5.0.2",
     "express": "^4.17.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "if-env": "^1.0.4",
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.2",
